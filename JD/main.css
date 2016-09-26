@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 12px;
+	color: #666;
+}
+a{
+	text-decoration: none;
+}
+#nav{
+	margin: 200px 0 0 150px;
+}
+.dd-inner{
+	background: #c81623;
+	font-family: 'Microsoft YaHei';
+	width: 210px;
+	float: left;
+}
+.dd-inner i{
+	z-index: 1;
+	top: 9px;
+	right: 14px;
+	width: 4px;
+	height: 14px;
+	font: 400 9px/14px consolas;
+	
+}
+.item{
+	height: 31px;
+	padding-left: 15px;
+}
+.item:hover{
+	background: #fff;
+}
+.item:hover a{
+	color: #c81623;
+}
+.item h3{
+	line-height: 31px;
+	font-size: 14px;	
+}
+.item a{
+	color: #fff;
+}
+.dorpdown-layer{
+	width: 999px;
+	float: left;
+}
+.item-sub{
+
+	height: 309px;
+}
