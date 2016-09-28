@@ -7,11 +7,36 @@
 	<link rel="stylesheet" href="../bootstrap.min.css">
 	<link rel="stylesheet" href="../css/font-awesome.min.css">
 	<script src="main.js"></script>
+	<script src="../jquery-3.1.1.min.js"></script>
+	<script src="../bootstrap.min.js"></script>
 </head> 
 <body>
+<!-- 模态框 -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <h3><b>项目人员添加：</b></h3>
+      <form class="form-horizontal clearfix" style="padding: 0 20px;" role="form">
+        <div class="form-group modalDiv">
+          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group modalDiv">
+          <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>
+       
+      </form>
+    </div>
+  </div>
+</div>
 	<header>
 		<nav id="main_menu">
-			<div class="container clearfix">
+			<div class="container clearfix" style="margin: 0;width: 100%;">
 				<div id="logo">
 					<img src="logo_01.png" alt="中国移动">
 				</div>
@@ -27,7 +52,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="#">社区<i class="icon-angle-down"></i></a>
+							<a href="#">用户管理<i class="icon-angle-down"></i></a>
 							<ul class="second">
 								<li><a href="#">学习视频</a></li>
 								<li><a href="#">导师</a></li>
@@ -35,9 +60,12 @@
 								<li><a href="#">开班预告</a></li>
 							</ul>
 						</li>
-						<li><a href="#">作品库</a></li>
-						<li><a href="#">文章</a></li>
-						<li><a href="#">加入</a></li>
+						<li><a href="#">开发阶段管理<i class="icon-angle-down"></i></a></li>
+						<li><a href="#">版本管理<i class="icon-angle-down"></i></a></li>
+						<li><a href="#">配置管理<i class="icon-angle-down"></i></a></li>
+						<li><a href="#">报告管理<i class="icon-angle-down"></i></a></li>
+						<li><a href="#">日志管理<i class="icon-angle-down"></i></a></li>
+						<li><a href="#">日志管理<i class="icon-angle-down"></i></a></li>
 					</ul>
 					<ul class="signin clearfix">
 						<li><a href="#"><i class="icon-user-md"></i>登录</a></li>
@@ -53,9 +81,9 @@
 			<div class="content">
 				<div class="content_nav ">
 					<ul class="content_nav_ul clearfix">
-						<li class="content_nav_itemleft"><b><i class="icon-file"></i>基本信息111111：</b></li>
-						<li class="content_nav_itemright"><a href="#">取消</a></li>
-						<li class="content_nav_itemright"><a href="#">添加/保存</a></li>
+						<li class="content_nav_itemleft"><b><i class="icon-file"></i>基本信息：</b></li>
+						<li class="content_nav_itemright"><button type="button" class="btn btn-success btn-sm">取消</button></li>
+						<li class="content_nav_itemright"><button type="button" class="btn btn-success btn-sm">添加/保存</button></li>
 					</ul>
 				</div>
 				<div class="content_form">
@@ -63,13 +91,37 @@
 					  <div class="form-group">
 					    <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">项目名称：</label>
 					    <div class="col-sm-10">
-					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					      <input type="email" class="form-control" id="inputEmail3" placeholder="项目名称">
 					    </div>
 					  </div>
 					  <div class="form-group">
-					    <label for="inputPassword3" class="col-sm-2 control-label"style="text-align: left">项目编号</label>
+					    <label for="inputPassword3" class="col-sm-2 control-label"style="text-align: left">项目编号：</label>
 					    <div class="col-sm-10">
-					      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="项目编号">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label"style="text-align: left">项目经理：</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="项目经理">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label"style="text-align: left">开始时间：</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="开始时间">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label"style="text-align: left">结束时间：</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="结束时间">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label"style="text-align: left">工单编号：</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="工单编号">
 					    </div>
 					  </div>
 					</form>
@@ -77,12 +129,12 @@
 				<div class="content_nav ">
 					<ul class="content_nav_ul clearfix">
 						<li class="content_nav_itemleft"><i class=" icon-user-md"></i><b>角色信息：</b></li>
-						<li class="content_nav_itemleft"><a href="#">添加</a></li>
-						<li class="content_nav_itemleft"><a href="#">删除</a></li>
-						<li class="content_nav_itemleft"><a href="#">修改</a></li>
+						<li class="content_nav_itemleft"><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target=".bs-example-modal-lg">添加</button></li>
+						<li class="content_nav_itemleft"><button type="button" class="btn btn-primary btn-sm">删除</button></li>
+						<li class="content_nav_itemleft"><button type="button" class="btn btn-primary btn-sm">修改</button></li>
 						
-						<li class="content_nav_itemright"><a href="#">取消</a></li>
-						<li class="content_nav_itemright"><a href="#">添加/保存</a></li>
+						<li class="content_nav_itemright"><button type="button" class="btn btn-success btn-sm">取消</button></li>
+						<li class="content_nav_itemright"><button type="button" class="btn btn-success btn-sm">添加/保存</button></li>
 					</ul>
 				</div>
 				<div class="content_table">
@@ -115,6 +167,52 @@
 								<td>单元测试</td>
 								<td></td>
 								<td>单元测试</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="content_nav ">
+					<ul class="content_nav_ul clearfix">
+						<li class="content_nav_itemleft"><b><i class="icon-file"></i>项目人员：</b></li>
+						<li class="content_nav_itemleft"><a href="#">添加</a></li>
+						<li class="content_nav_itemleft"><a href="#">删除</a></li>
+						<li class="content_nav_itemleft"><a href="#">修改</a></li>
+						<li class="content_nav_itemright"><a href="#">取消</a></li>
+						<li class="content_nav_itemright"><a href="#">添加/保存</a></li>
+					</ul>
+				</div>
+				<div class="content_table">
+					<table class="table table-hover">
+						<thead>
+							<td></td>
+							<td><b>用户名</b></td>
+							<td><b>姓名</b></td>
+							<td><b>性别</b></td>
+							<td><b>电话</b></td>
+							<td><b>邮箱</b></td>
+							<td><b>所属公司</b></td>
+							<td><b>角色</b></td>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>aaaaaaaaaaaaaa</td>
+								<td>bbbbbbbbbb</td>
+								<td>男</td>
+								<td>1234543234	</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
 							</tr>
 						</tbody>
 					</table>

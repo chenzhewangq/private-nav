@@ -23,6 +23,9 @@ i{
 nav header{
 	display: block;
 }
+h3{
+	margin-left: 20px;
+}
 #logo{
 	/*width: 200px;*/
 	float: left;
@@ -58,6 +61,8 @@ header{
 	width: auto;
 	height: 30px;
 	margin-top: 25px;
+	/*overflow: hidden;*/
+	/*overflow-x:scroll;*/
 }
 .first>li{
 	height: 70px;
@@ -133,8 +138,11 @@ header{
 	font-size: 18px;
 	font-weight: 400;
 }*/
-.content_nav{
+.content_nav:first-child{
 	margin-top: 20px;
+}
+.content_nav{
+	margin-top: 60px;
 	border-bottom: 1px solid #ccc;
 }
 .content_nav_itemleft{
@@ -157,4 +165,21 @@ header{
 	margin-top: 20px;
 	margin-bottom: 50px;
 	border-bottom: 1px solid #ccc;
+}
+.content_nav_ul{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding:0;
+	height: 50px;
+}
+.content_nav_ul li{
+	line-height: 50px;
+}
+.funbutton:hover a{
+	text-decoration: none;
+}
+.modalDiv{
+	float:left;
+	margin-top: 10px;
+	padding:0 20px;
 }
