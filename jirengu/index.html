@@ -12,7 +12,9 @@
 	<header>
 		<nav id="main_menu">
 			<div class="container clearfix">
-				<div id="logo"></div>
+				<div id="logo">
+					<img src="logo_01.png" alt="中国移动">
+				</div>
 				<div id="menu" class="clearfix nav_collapse">
 					<ul class="first clearfix">
 						<li>		
@@ -38,9 +40,9 @@
 						<li><a href="#">加入</a></li>
 					</ul>
 					<ul class="signin clearfix">
-						<li><a href="#">登录</a></li>
+						<li><a href="#"><i class="icon-user-md"></i>登录</a></li>
 						<li> | </li>
-						<li><a href="#">退出</a></li>
+						<li><a href="#"><i class="icon-off"></i>退出</a></li>
 					</ul>
 				</div>
 			</div>
@@ -49,7 +51,74 @@
 	<div id="main">
 		<div class="container">
 			<div class="content">
-				
+				<div class="content_nav ">
+					<ul class="content_nav_ul clearfix">
+						<li class="content_nav_itemleft"><b><i class="icon-file"></i>基本信息：</b></li>
+						<li class="content_nav_itemright"><a href="#">取消</a></li>
+						<li class="content_nav_itemright"><a href="#">添加/保存</a></li>
+					</ul>
+				</div>
+				<div class="content_form">
+					<form class="form-horizontal" role="form">
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">项目名称：</label>
+					    <div class="col-sm-10">
+					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label"style="text-align: left">项目编号</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+					    </div>
+					  </div>
+					</form>
+				</div>
+				<div class="content_nav ">
+					<ul class="content_nav_ul clearfix">
+						<li class="content_nav_itemleft"><i class=" icon-user-md"></i><b>角色信息：</b></li>
+						<li class="content_nav_itemleft"><a href="#">添加</a></li>
+						<li class="content_nav_itemleft"><a href="#">删除</a></li>
+						<li class="content_nav_itemleft"><a href="#">修改</a></li>
+						
+						<li class="content_nav_itemright"><a href="#">取消</a></li>
+						<li class="content_nav_itemright"><a href="#">添加/保存</a></li>
+					</ul>
+				</div>
+				<div class="content_table">
+					<table class="table table-hover">
+						<thead>
+							<td></td>
+							<td><b>角色名称</b></td>
+							<td><b>查看权限</b></td>
+							<td><b>添加权限</b></td>
+							<td><b>编辑权限</b></td>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>项目经理</td>
+								<td>单元测试、代码评审</td>
+								<td>单元测试、代码评审</td>
+								<td>单元测试、代码评审</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>开发人员</td>
+								<td>单元测试</td>
+								<td>单元测试</td>
+								<td>单元测试</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>测试人员</td>
+								<td>单元测试</td>
+								<td></td>
+								<td>单元测试</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
