@@ -1,7 +1,7 @@
 /*Navigation*/
 .sidebar-nav {
-  width: 240px;
-  position: absolute;
+  width: 17%;
+  /*position: absolute;*/
   float: left;
   border-top: none;
   border-left: none;
@@ -78,7 +78,8 @@
   background: #fafafa;
 }
 .sidebar-nav .nav-list  > li > a:hover {
-  background: #d2d2dd;
+  background: url(../headerbck5.png) repeat;
+  color: white;
 }
 .sidebar-nav .nav-list  > .active > a,
 .sidebar-nav .nav-list  > .active > a:hover {

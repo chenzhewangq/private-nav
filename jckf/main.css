@@ -2,10 +2,15 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	height: 100%;
+	width: 100%;
+}
 body {
 	font-family: '微软雅黑';
 	font-size: 14px;
-
+	height: 100%;
+	width: 100%;
 	color: #333;
 }
 a {
@@ -31,13 +36,13 @@ a:hover {
 	border-bottom: 1px solid #ccc;
 
 }
-#header-bck {
-	position: fixed;
+.headerself {
+	/*position: relative;*/
 	z-index: -1;
 	width: 100%;
 	height: 70px;
-	background: url("headerbck.jpg") repeat-x;
-	opacity: 0.2;
+	background: url("headerbck5.png") repeat-x;
+	/*opacity: 0.7;*/
 }
 .header_img {
 	display: block;
@@ -48,18 +53,20 @@ a:hover {
 .header_nav {
 	height: 70px;
 }
+.headerself a {
+	color: white;
+}
 .header_nav, 
 .header_nav li {
 	float: left;
 	display: block;
 	line-height: 70px;
+
+	color: #000;
 }
 .header_sign_in li,
 .header_nav li {
 	list-style: none;
-
-	color: #333;
-
 	margin: 0 10px;
 }
 .header_btn{
@@ -86,17 +93,17 @@ a:hover {
 
 /*header 结束*/
 .pro_main {
-	position: absolute;
-	width: 1350px;
+	/*position: absolute;*/
+	width: 100%;
 	height: 100%;
-	border-right: 1px solid #ccc;
+	/*border-right: 1px solid #ccc;*/
 }
 .pro_content {
-	float:right;
+	float:left;
 	padding: 0 30px;
 	height: 100%;
-	width: 1110px;
-	border-right: 1px solid #ccc;
+	width: 82%;
+	/*border-right: 1px solid #ccc;*/
 }
 .pro_content_nav {
 	padding:20px 0;
@@ -105,7 +112,7 @@ a:hover {
 	margin-right: 10px;
 }
 .tab_content_btn {
-	position: absolute;
-	top: 25px;
-	right: 100px;
+	position: relative;
+	top: -55px;
+	/*right: 100px;*/
 }
