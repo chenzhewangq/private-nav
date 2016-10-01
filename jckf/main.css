@@ -102,7 +102,7 @@ a:hover {
 	float:left;
 	padding: 0 30px;
 	height: 100%;
-	width: 82%;
+	width: 100%;
 	/*border-right: 1px solid #ccc;*/
 }
 .pro_content_nav {
@@ -115,4 +115,10 @@ a:hover {
 	position: relative;
 	top: -55px;
 	/*right: 100px;*/
+}
+#foward {
+	display: inline;
+	position: absolute;
+	top: 50%;
+	left: 0;
 }

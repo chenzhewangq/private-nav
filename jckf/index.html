@@ -45,9 +45,8 @@
 			</li>
 		</ul>
 	</div> -->
-
-	<!-- 项目管理、用户管理、版本管理：替换DIV层 -->
-	<div class="pro_main clearfix">
+	<!-- sidebar -->
+	<div id="sidebarDiv" class="clearfix">
 		<div class="sidebar-nav" style="border-right: 1px solid #ccc;height: 100%;">
 			<ul>
 			<li><a href="#" data-target=".dashboard-menu" class="nav-header" data-toggle="collapse"><i class="fa fa-fw fa-dashboard"></i> 开发阶段管控<i class="fa fa-collapse"></i></a></li>
@@ -75,9 +74,17 @@
 			        <li ><a href="premium-build.html"><span class="fa fa-caret-right"></span> Advanced Tools</a></li>
 			        <li ><a href="premium-colors.html"><span class="fa fa-caret-right"></span> Additional Color Themes</a></li>
 			</ul></li>
+			</ul>
 		</div>
+		<div id="foward">
+			<img src="back.png" >
+		</div>
+	</div>
+	<!-- 项目管理、用户管理、版本管理：替换DIV层 -->
+	<div class="pro_main clearfix" style="background-color: pink;">
+		
 		<!-- 项目管理替换DIV层 -->
-		<div class="pro_content">
+		<!-- <div class="pro_content">
 			<div class="pro_content_nav">
 				<ul class="nav nav-tabs" role="tablist">
 				  <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">单元测试</a></li>
@@ -88,9 +95,7 @@
 				
 			</div>
 
-			<!-- Tab panes -->
-			<div class="tab-content">
-			  <!-- 单元测试 开始 -->
+			<div class="tab-content"> 
 			  <div role="tabpanel" class="tab-pane active" id="home">
 				<div class="clearfix">
 					<span style="color: #325D6D;font-size: 18px;"><b>单元测试执行报告：</b></span>
@@ -135,8 +140,43 @@
 			  <div role="tabpanel" class="tab-pane" id="profile">...</div>
 			  <div role="tabpanel" class="tab-pane" id="messages">...</div>
 			  <div role="tabpanel" class="tab-pane" id="settings">...</div>
-			</div>
-		</div>
+			</div> 
+		</div> -->
+		<table>
+			<thead>
+				<th>执行用例数</th>
+				<th>成功数</th>
+				<th>失败数</th>
+				<th>阻塞数</th>
+				<th>成功数</th>
+				<th>覆盖率</th>
+				<th>执行时间</th>
+				<th>执行结果</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1111</td>
+					<td>1111</td>
+					<td>1111</td>
+					<td>1111</td>
+					<td>1111</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
+
+
+	<script>
+		$('#sidebarDiv').hover(function() {
+			$(".sidebar-nav").stop().animate({marginLeft: '0'},800);
+			$("#foward").stop().animate({left: '17%'},800);
+			$("#foward").attr('src', back.png)
+			
+		}, function() {
+			$(".sidebar-nav").stop().animate({marginLeft: '-17%'},800);
+			$("#foward").stop().animate({left: '0'},800);
+			$("#foward").attr('src', foward.png)
+		})
+	</script>
 </body>
 </html>
