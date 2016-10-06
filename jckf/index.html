@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../css/font-awesome.min.css">
 	<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="home_page.css">
 
 	<!-- <link href='http://fonts.useso.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="styles/theme.css">
@@ -22,149 +23,173 @@
 		<img class="header_img" src="logo_01.png" alt="中国移动">
 		<nav class="header_nav clearfix">
 			<ul class="clearfix">
-				<li><a class="header_btn" href="#"><b>项目管理 TEST111</b></a></li>
+				<li><a class="header_btn" href="#"><b>项目管理</b></a></li>
 				<li><a class="header_btn" href="#"><b>用户管理</b></a></li>
 				<li><a class="header_btn" href="#"><b>版本管理</b></a></li>
 			</ul>
 		</nav>
 		<div class="header_sign_in">
 			<ul class="clearfix">
-				<li><a class="header_btn" href="#"><i class="icon-off" style="margin-right: 5px;"></i>退出</a></li>
+				<li><a class="header-btn-sign" href="#"><i class="icon-off" style="margin-right: 5px;"></i>退出</a></li>
 				<li style="color: white;"> | </li>
-				<li><a class="header_btn" href="#"><i class="icon-user-md" style="margin-right: 5px;"></i>登录</a></li>
+				<li><a class="header-btn-sign" href="#"><i class="icon-user-md" style="margin-right: 5px;"></i>登录</a></li>
 			</ul>
 		</div>
 	</header>
-	<!-- <div class="sidebar_nav">
-		<ul>
-			<li><a href="#" class="nav_header" data-target=".dashboard-menu" data-toggle="collapse">测试-一级目录</a></li>
-			<li>
-				<ul class="dashboard-menu">
-					<li><span><a href="#">测试-二级目录</a></span></li>
-				</ul>
-			</li>
-		</ul>
-	</div> -->
-	<!-- sidebar -->
-	<div id="sidebarDiv" class="clearfix">
-		<div class="sidebar-nav" style="border-right: 1px solid #ccc;height: 100%;">
-			<ul>
-			<li><a href="#" data-target=".dashboard-menu" class="nav-header" data-toggle="collapse"><i class="fa fa-fw fa-dashboard"></i> 开发阶段管控<i class="fa fa-collapse"></i></a></li>
-			<li>
-				<ul class="dashboard-menu nav nav-list collapse in">
-			        <li><a href="index.html"><span class="fa fa-caret-right"></span> 版本管理</a></li>
-			        <li ><a href="users.html"><span class="fa fa-caret-right"></span> 报告管理</a></li>
-			        <li ><a href="user.html"><span class="fa fa-caret-right"></span> 配置管理</a></li>
-				</ul>
-			</li>
+	
+	<!-- ui-view层 -->
+	<div style="height: 100%;">
+		<!-- sidebar -->
+		<div id="sidebarDiv" class="clearfix">
+				<div class="sidebar-nav" style="border-right: 1px solid #ccc;height: 100%;">
+					<ul>
+						<li style="border-bottom: 1px solid #a8aeb7;"><span style="display: block;width: inherit;padding: 10px;color: #a8aeb7; font-size: 25px;">集成开发管理平台系统</span></li>
+					</ul>
+					<ul>
+						<li><a href="#" data-target=".dashboard-menu" class="nav-header" data-toggle="collapse"><i class="fa fa-fw fa-dashboard"></i> 开发阶段管控<i class="fa fa-collapse"></i></a></li>
+						<li>
+							<ul class="dashboard-menu nav nav-list collapse in">
+						        <li><a href="index.html"><span style="color: white; background: none" class="fa fa-caret-right"></span> 单元测试</a></li>
+						        <li ><a href="users.html"><span class="fa fa-caret-right"></span> 代码检查</a></li>
+						        <li ><a href="user.html"><span class="fa fa-caret-right"></span> 代码评审</a></li>
+							</ul>
+						</li>
 
-			<li data-popover="true" data-content="Items in this group require a <strong><a href='http://portnine.com/bootstrap-themes/aircraft' target='blank'>premium license</a><strong>." rel="popover" data-placement="right"><a href="#" data-target=".premium-menu" class="nav-header collapsed" data-toggle="collapse"><i class="fa fa-fw fa-fighter-jet"></i> Premium Features<i class="fa fa-collapse"></i></a></li>
-			    <li><ul class="premium-menu nav nav-list collapse">
-			            <li class="visible-xs visible-sm"><a href="#">- Premium features require a license -</a></span>
-			        <li ><a href="premium-profile.html"><span class="fa fa-caret-right"></span> Enhanced Profile</a></li>
-			        <li ><a href="premium-blog.html"><span class="fa fa-caret-right"></span> Blog</a></li>
-			        <li ><a href="premium-blog-item.html"><span class="fa fa-caret-right"></span> Blog Page</a></li>
-			        <li ><a href="premium-pricing-tables.html"><span class="fa fa-caret-right"></span> Pricing Tables</a></li>
-			        <li ><a href="premium-upgrade-account.html"><span class="fa fa-caret-right"></span> Upgrade Account</a></li>
-			        <li ><a href="premium-widgets.html"><span class="fa fa-caret-right"></span> Widgets</a></li>
-			        <li ><a href="premium-timeline.html"><span class="fa fa-caret-right"></span> Activity Timeline</a></li>
-			        <li ><a href="premium-users.html"><span class="fa fa-caret-right"></span> Enhanced Users List</a></li>
-			        <li ><a href="premium-media.html"><span class="fa fa-caret-right"></span> Enhanced Media</a></li>
-			        <li ><a href="premium-invoice.html"><span class="fa fa-caret-right"></span> Invoice</a></li>
-			        <li ><a href="premium-build.html"><span class="fa fa-caret-right"></span> Advanced Tools</a></li>
-			        <li ><a href="premium-colors.html"><span class="fa fa-caret-right"></span> Additional Color Themes</a></li>
-			</ul></li>
-			</ul>
-		</div>
-		<div id="foward">
-			<img src="back.png" >
-		</div>
-	</div>
-	<!-- 项目管理、用户管理、版本管理：替换DIV层 -->
-	<div class="pro_main clearfix" style="background-color: pink;">
-		
-		<!-- 项目管理替换DIV层 -->
-		<!-- <div class="pro_content">
-			<div class="pro_content_nav">
-				<ul class="nav nav-tabs" role="tablist">
-				  <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">单元测试</a></li>
-				  <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">代码检查</a></li>
-				  <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">代码评审</a></li>
-				  <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">缺陷管理</a></li>
-				</ul>
-				
-			</div>
+						<li><a href="#" data-target=".bbgl" class="nav-header" data-toggle="collapse"><i class="fa fa-fw fa-dashboard"></i> 版本管理<i class="fa fa-collapse"></i></a></li>
+						<li>
+							<ul class="bbgl nav nav-list collapse in">
+						        <li><a href="index.html"><span style="color: white; background: none" class="fa fa-caret-right"></span> 单元测试</a></li>
+						        <li ><a href="users.html"><span class="fa fa-caret-right"></span> 代码检查</a></li>
+						        <li ><a href="user.html"><span class="fa fa-caret-right"></span> 代码评审</a></li>
+						        <li ><a href="user.html"><span class="fa fa-caret-right"></span> 缺陷管理</a></li>
+						        <li ><a href="user.html"><span class="fa fa-caret-right"></span> 会签管理</a></li>
+							</ul>
+						</li>
 
-			<div class="tab-content"> 
-			  <div role="tabpanel" class="tab-pane active" id="home">
-				<div class="clearfix">
-					<span style="color: #325D6D;font-size: 18px;"><b>单元测试执行报告：</b></span>
-					<button type="button" class="btn btn-primary btn-sm" style="float: right">会签</button>
-					<button type="button" class="btn btn-primary btn-sm" style="margin-right: 10px;float: right">执行</button>
+						<li data-popover="true" data-content="Items in this group require a <strong><a href='http://portnine.com/bootstrap-themes/aircraft' target='blank'>premium license</a><strong>." rel="popover" data-placement="right"><a href="#" data-target=".premium-menu" class="nav-header collapsed" data-toggle="collapse"><i class="fa fa-fw fa-fighter-jet"></i> Premium Features<i class="fa fa-collapse"></i></a></li>
+						    <li><ul class="premium-menu nav nav-list collapse">
+						            <li class="visible-xs visible-sm"><a href="#">- Premium features require a license -</a></span>
+						        <li ><a href="premium-profile.html"><span class="fa fa-caret-right"></span> Enhanced Profile</a></li>
+						        <li ><a href="premium-blog.html"><span class="fa fa-caret-right"></span> Blog</a></li>
+						        <li ><a href="premium-blog-item.html"><span class="fa fa-caret-right"></span> Blog Page</a></li>
+						        <li ><a href="premium-pricing-tables.html"><span class="fa fa-caret-right"></span> Pricing Tables</a></li>
+						        <li ><a href="premium-upgrade-account.html"><span class="fa fa-caret-right"></span> Upgrade Account</a></li>
+						        <li ><a href="premium-widgets.html"><span class="fa fa-caret-right"></span> Widgets</a></li>
+						        <li ><a href="premium-timeline.html"><span class="fa fa-caret-right"></span> Activity Timeline</a></li>
+						        <li ><a href="premium-users.html"><span class="fa fa-caret-right"></span> Enhanced Users List</a></li>
+						        <li ><a href="premium-media.html"><span class="fa fa-caret-right"></span> Enhanced Media</a></li>
+						        <li ><a href="premium-invoice.html"><span class="fa fa-caret-right"></span> Invoice</a></li>
+						        <li ><a href="premium-build.html"><span class="fa fa-caret-right"></span> Advanced Tools</a></li>
+						        <li ><a href="premium-colors.html"><span class="fa fa-caret-right"></span> Additional Color Themes</a></li>
+						</ul></li>
+					</ul>
 				</div>
-			  	<table class="table table-hover" style="margin-top: 20px;">
-			  	 	<thead>
-			  	 		<th>执行用例数</th>
-			  	 		<th>成功数</th>
-			  	 		<th>失败数</th>
-			  	 		<th>阻塞数</th>
-			  	 		<th>成功数</th>
-			  	 		<th>覆盖率</th>
-			  	 		<th>执行时间</th>
-			  	 		<th>执行结果</th>
-			  	 	</thead>
-			  	 	<tbody>
-			  	 			<tr>
-			  	 				<td>1</td>
-			  	 				<td>1</td>
-			  	 				<td>12222222222222222222</td>
-			  	 				<td>1</td>
-			  	 				<td>1</td>
-			  	 				<td>1</td>
-			  	 				<td>1</td>
-			  	 				<td>1</td>
-			  	 			</tr>
-			  	 			<tr>
-			  	 				<td>2</td>
-			  	 				<td>2</td>
-			  	 				<td>2</td>
-			  	 				<td>2</td>
-			  	 				<td>2</td>
-			  	 				<td>2</td>
-			  	 				<td>2</td>
-			  	 				<td>2</td>
-			  	 			</tr>
-			  	 	</tbody>
-			  	</table>
-			  </div>
-			  <div role="tabpanel" class="tab-pane" id="profile">...</div>
-			  <div role="tabpanel" class="tab-pane" id="messages">...</div>
-			  <div role="tabpanel" class="tab-pane" id="settings">...</div>
-			</div> 
-		</div> -->
-		<table>
-			<thead>
-				<th>执行用例数</th>
-				<th>成功数</th>
-				<th>失败数</th>
-				<th>阻塞数</th>
-				<th>成功数</th>
-				<th>覆盖率</th>
-				<th>执行时间</th>
-				<th>执行结果</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1111</td>
-					<td>1111</td>
-					<td>1111</td>
-					<td>1111</td>
-					<td>1111</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+				<div id="foward">
+					<img src="back.png" >
+				</div>
+		</div>
+		<!-- 项目管理：替换DIV层 -->
+		<div class="pro_main clearfix" style="background-color: #26354c;">
+				<h2>单元测试执行报告：</h2>
+				<table class="table table-bordered">
+				  <thead>
+				  	<th>执行用例数</th>
+				  	<th style="color: #0ef634">成功数</th>
+				  	<th>失败数</th>
+				  	<th>阻塞数</th>
+				  	<th style="color: #0ef634">成功率</th>
+				  	<th>覆盖率</th>
+				  	<th>执行时间</th>
+				  	<th>执行标签号</th>
+				  	<th>执行结果</th>
+				  </thead>
+				  <tbody>
+				  	<tr>
+				  		<td>100</td>
+				  		<td>95</td>
+				  		<td>5</td>
+				  		<td>0</td>
+				  		<td>95%</td>
+				  		<td>96%</td>
+				  		<td>20160121</td>
+				  		<td>11040</td>
+				  		<td>成功</td>
+				  	</tr>
+				  	<tr>
+				  		<td>100</td>
+				  		<td>88</td>
+				  		<td>10</td>
+				  		<td>2</td>
+				  		<td>95%</td>
+				  		<td>96%</td>
+				  		<td>20160121</td>
+				  		<td>11040</td>
+				  		<td>成功</td>
+				  	</tr>
+				  	<tr>
+				  		<td>100</td>
+				  		<td>80</td>
+				  		<td>10</td>
+				  		<td>10</td>
+				  		<td>85%</td>
+				  		<td>96%</td>
+				  		<td>20160121</td>
+				  		<td>11040</td>
+				  		<td>成功</td>
+				  	</tr>
+				  </tbody>
+				</table>
+				
+		</div>
 
+
+		<!-- Home Page -->
+		<!-- <div class="home-page">
+			<div class="home-page-nav">
+				<div><span>项目名称：</span><input type="text"></div>
+				<div><span>项目经理：</span><input type="text"></div>
+				<div><span>项目状态：</span>
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle btn-sm" type="button" id="dropdownMenu1" data-toggle="dropdown">
+					    Dropdown
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">进行中</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">已结束</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">计划中</a></li>
+					  </ul>
+					</div>
+				</div>
+				<div>
+					<button type="button" class="btn btn-primary btn-sm">查询</button>
+					<button type="button" class="btn btn-success btn-sm">添加</button>
+				</div>
+			</div>
+			<table class="table table-bordered">
+			  <thead>
+			  	<th>项目名称</th>
+			  	<th>项目编号</th>
+			  	<th>项目开始时间</th>
+			  	<th>项目结束时间</th>
+			  	<th>项目经理</th>
+			  	<th>项目状态</th>
+			  	<th>操作</th>
+			  </thead>
+			  <tbody>
+			  	<tr>
+			  		<td>集成开发管理</td>
+			  		<td>JCKF</td>
+			  		<td>2016-08-1</td>
+			  		<td>2017-08-1</td>
+			  		<td>吕振山</td>
+			  		<td>进行中</td>
+			  		<td>进入项目</td>
+			  	</tr>
+			  </tbody>
+			</table>
+		</div> -->
+	</div>
 
 	<script>
 		$('#sidebarDiv').hover(function() {
